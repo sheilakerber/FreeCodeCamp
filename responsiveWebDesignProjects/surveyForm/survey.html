@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most common code languages</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Code Languages Survey Form</h1>
+        <p id="description">Thank you for your time and collaboration!</p>
+    </header>
+    <main id="main">
+        <form id="survey-form" action="">
+        <div class="form-field">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-field">
+            <label id="email-label" for="name">Email</label>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Enter your email" required="">
+        </div>
+        <div class="form-field">
+            <label id="number-label" for="name">Age</label>
+            <input type="number" name="number" id="number" class="form-input" placeholder="Age" min="10" max="50"   required="">
+        </div>      
+        <div class="form-field">
+            <p>Select the option that better describes your current role:</p>
+            <select name="role-dropdown" id="dropdown" required="">
+                <option disabled="" selected="" value="">Current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>          
+        </div>
+        <div class="form-field">
+            <p>What do you like the most about programming?</p>
+            <label><input name="radio-group" value="Diversity of languages" type="radio" class="input-radio" >Diversity of languages</label>
+            <label><input name="radio-group" value="Broad labor market" type="radio" class="input-radio" >Broad labor market</label>
+            <label><input name="radio-group" value="Home office possibility" type="radio" class="input-radio" >Home office possibility</label>                   
+        </div>
+
+        <div class="form-field">
+            <p>Select the coding languages you consider you have more domain:</p>
+            <label name="check-group" for=""><input value="Python" type="checkbox" class="input-checkbox">Python</label>
+            <label name="check-group" for=""><input value="JavaScript" type="checkbox" class="input-checkbox">JavaScript</label>
+            <label name="check-group" for=""><input value="Java" type="checkbox" class="input-checkbox">Java</label>
+            <label name="check-group" for=""><input value="C#" type="checkbox" class="input-checkbox">C#</label>    
+            <label name="check-group" for=""><input value="C" type="checkbox" class="input-checkbox">C</label>    
+            <label name="check-group" for=""><input value="C++" type="checkbox" class="input-checkbox">C++</label>    
+            <label name="check-group" for=""><input value="Go" type="checkbox" class="input-checkbox">Go</label>    
+            <label name="check-group" for=""><input value="R" type="checkbox" class="input-checkbox">R</label>
+            <label name="check-group" for=""><input value="Swift" type="checkbox" class="input-checkbox">Swift</label>    
+            <label name="check-group" for=""><input value="PHP" type="checkbox" class="input-checkbox">PHP</label>    
+        </div>
+
+        <div class="form-field">
+            <p>Tell us a little about your experience at coding:</p>
+            <label name="text-area"><textarea name="experienteComment" placeholder="Anything you want! How did you start? Are you from another area? Etc..." id="" cols="30" rows="10"></textarea></label>
+        </div>
+        <button id="submit">Send</button>
+        </form>
+    </main>
+    
+</body>
+</html>

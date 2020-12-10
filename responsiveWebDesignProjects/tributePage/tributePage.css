@@ -1,0 +1,53 @@
+body {
+    background-color: rgba(210, 196, 196, 0.5);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#img-div {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(210, 196, 196);
+}
+
+#image {
+    margin-top: 20px;
+    border: 2px solid #FFF;
+    box-shadow: 0 0 3px 1px rgba(243, 239, 239, 0.8);
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    margin: 1% 8%;
+}
+
+#tribute-info {
+    text-align: justify;
+    margin: 80px 100px;
+    line-height: 30px;
+}
+
+.titleSection {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+p {
+    margin: 30px auto;
+}
+
+#pExternalLink {
+    color: rgb(60, 181, 0);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(60, 181, 0);
+}
+
+a:hover {
+    font-weight: bold;
+}

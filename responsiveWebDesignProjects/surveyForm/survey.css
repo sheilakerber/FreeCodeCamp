@@ -1,0 +1,95 @@
+body {
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/coding-03.jpg");
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    font-size: medium;
+}
+
+header {
+    margin: 10px 40px 0 40px;
+    color: black;
+    background-color: rgba(238, 232, 232, 098);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+header p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: rgb(40, 164, 155);
+}
+
+main {
+    margin: -20px 40px 10px 40px;
+    background-color: rgba(238, 232, 232, 0.9);
+    padding: 5% 10%;
+    border-radius: 0 0 10px 10px;
+}
+
+.form-field {
+    text-align: justify;
+}
+
+.form-field label,
+p {
+    display: block;
+    padding-left: 10%;
+}
+
+.form-field input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea {
+    width: 80%;
+    margin-left: 10%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 80%;
+    margin-left: 0;
+}
+
+.form-field input[type=radio],
+input[type=checkbox] {
+    margin-left: 20%;
+}
+
+#name-label,
+#email-label,
+#number-label {
+    font-weight: bolder;
+}
+
+.form-field p {
+    font-weight: bolder;
+}
+
+main ::placeholder {
+    color: rgb(118, 203, 197);
+}
+
+button {
+    background-color: rgb(118, 203, 197);
+    padding: 8px;
+    border-radius: 8px;
+    width: 100px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(67, 160, 154);
+    cursor: pointer;
+    transition: 100ms;
+}
