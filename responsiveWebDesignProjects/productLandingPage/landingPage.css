@@ -1,0 +1,256 @@
+:root {
+    --sub-title-Color: rgb(123, 1, 42);
+    --sub-title-fontSize: 1em;
+}
+
+body {
+    background-color: rgba(220, 218, 201, 0.4);
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    top: 100px;
+    overflow-x: hidden;
+    display: block;
+}
+
+#header-img {
+    width: 50px;
+}
+
+#logoName {
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+    margin-left: 2%;
+}
+
+#logoDiv {
+    display: flex;
+    text-align: center;
+    color: rgb(123, 1, 42);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background: rgb(244, 241, 231);
+    padding-top: 40px;
+    border-bottom: 1px dashed var(--sub-title-Color);
+}
+
+header li {
+    display: inline;
+    list-style: none;
+}
+
+#navDiv {
+    margin-top: 2%;
+    padding-bottom: 0;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(123, 1, 42);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 30px;
+}
+
+header li a:hover {
+    color: rgb(123, 1, 42);
+    cursor: pointer;
+}
+
+#form {
+    display: block;
+    position: relative;
+    top: 60%;
+}
+
+form p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+form input[type=email] {
+    width: 40%;
+    height: 25px;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    border: 1px solid rgb(171, 165, 165);
+    font-size: 0.8em;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+form input[type=submit] {
+    background-color: rgb(249, 216, 85);
+    padding: 5px;
+    width: 190px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+}
+
+form input[type=submit]:hover,
+#pricesInfo div button:hover {
+    background-color: rgb(254, 192, 35);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#featuresInfo {
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    height: auto;
+    margin-left: 10%;
+}
+
+#featuresInfo div {
+    display: flex;
+}
+
+#featuresInfo div img {
+    width: 70px;
+}
+
+#featuresInfo div h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#featuresInfo div p {
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 100%;
+    margin-top: 0;
+}
+
+#featuresInfo div article {
+    display: block;
+    justify-content: left;
+    margin-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: left;
+}
+
+#video {
+    margin-top: 60%;
+    width: 60%;
+}
+
+#HoursInfo {
+    margin-top: 10%;
+    justify-items: center;
+}
+
+#HoursInfo p {
+    font-weight: bold;
+    color: var(--sub-title-Color);
+    font-size: 1.2em;
+}
+
+#HoursInfo table {
+    display: block;
+    color: black;
+    margin-left: 25%;
+}
+
+#HoursInfo table {
+    border-collapse: collapse;
+}
+
+#HoursInfo table td,
+#HoursInfo table th {
+    border: 1px solid rgba(123, 1, 42, 0.4);
+    padding: 8px;
+}
+
+#HoursInfo table th {
+    text-align: center;
+    background-color: rgba(123, 1, 42, 0.7);
+    color: white;
+}
+
+#HoursInfo table tr {
+    color: var(--sub-title-Color);
+    font-weight: bold;
+}
+
+#HoursInfo table tr td:nth-child(1n + 2) {
+    color: black;
+    font-weight: normal;
+}
+
+#pricesInfo {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#pricesInfo div {
+    border: 1px solid rgba(123, 1, 42, 0.4);
+}
+
+#pricesInfo div h2 {
+    color: var(--sub-title-Color);
+    font-weight: normal;
+    background-color: rgba(123, 1, 42, 0.1);
+    padding: 0.3em;
+    margin-top: 0;
+}
+
+#pricesInfo div .pricePlan {
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+#pricesInfo div .priceDescription {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#pricesInfo div button {
+    background-color: rgb(249, 216, 85);
+    padding: 5px;
+    width: 190px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    margin: 1em;
+}
+
+footer {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: block;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+@media all and (max-width:2000px) {
+    #video {
+        max-width: 500px;
+    }
+}
