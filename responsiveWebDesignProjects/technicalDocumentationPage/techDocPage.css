@@ -1,0 +1,189 @@
+    body {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    body main {
+        text-align: justify;
+        padding: 10px 30px;
+    }
+    
+    body nav {
+        background-color: rgb(225, 240, 215);
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+        padding-top: 20px;
+        border-right: 2px solid rgba(20, 128, 20, 0.3);
+        height: 150vw;
+    }
+    
+    body nav header {
+        font-size: 18pt;
+        text-align: center;
+        font-weight: normal;
+        vertical-align: center;
+        height: 1em;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    #navbar li {
+        list-style: none;
+    }
+    /* BELOW - sidebar positioned */
+    
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+        width: 20%;
+    }
+    
+    #main-doc {
+        top: 0;
+        display: block;
+        position: relative;
+        margin-left: 20%;
+        margin-top: 0;
+    }
+    /* ABOVE - sidebar positioned */
+    /* BELOW - media query for mobile devices */
+    
+    @media only screen and (max-width: 815px) {
+        #navbar {
+            position: absolute;
+            display: block;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            bottom: 0;
+            width: 100%;
+            height: 500px;
+            border: none;
+            z-index: 1;
+        }
+        #navbar header {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        #navbar ul {
+            display: block;
+            position: absolute;
+            margin-top: 0;
+            padding-top: 0;
+            top: -290px;
+        }
+        #navbar ul li a {
+            margin-top: 0;
+        }
+        #navbar ul li {
+            margin-left: 5%;
+        }
+        #main-doc {
+            top: 500px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    /* ABOVE - media query for mobile devices */
+    
+    #navbar ul {
+        list-style-type: none;
+        margin-left: -10px;
+        margin-top: 50%;
+        padding: 10px;
+        width: 100%;
+        overflow-y: auto;
+    }
+    
+    #navbar ul li {
+        width: 90%;
+        padding: 10px;
+        border-top: 1px solid rgba(20, 128, 20, 0.3);
+    }
+    
+    #navbar a {
+        color: black;
+        text-decoration: none;
+        font-weight: normal;
+        margin-top: 20px;
+    }
+    
+    #navbar ul li:hover {
+        background-color: rgb(197, 242, 167);
+        cursor: pointer;
+    }
+    
+    main section {
+        padding: 1.5em;
+        border-bottom: 1px dashed grey;
+    }
+    
+    main section header {
+        font-size: 18pt;
+    }
+    
+    .subtitle {
+        font-size: 16pt;
+    }
+    
+    .sub-subtitle {
+        font-size: 14pt;
+    }
+    
+    main section p {
+        padding-left: 1.5em;
+    }
+    
+    code {
+        font-size: 11pt;
+    }
+    
+    .code-snippet {
+        display: block;
+        width: 70%;
+        margin-left: 4em;
+        padding: 1em;
+        padding-left: 4em;
+        background-color: rgba(225, 240, 215, 0.3);
+    }
+    
+    #Data-Types ol {
+        margin-left: 1em;
+        line-height: 160%;
+    }
+    
+    #Loops-and-iterations ul,
+    #More_about_JS ul {
+        display: block;
+        margin-left: 3em;
+    }
+    
+    #Loops_and_iterations ul li a,
+    #More_about_JS ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #Functions a,
+    #References a {
+        color: black;
+    }
+    
+    #Loops_and_iterations ul li a:hover,
+    #More_about_JS ul li a:hover,
+    #Functions a:hover,
+    #References a:hover {
+        color: rgb(11, 193, 11);
+    }

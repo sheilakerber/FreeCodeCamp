@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techDocPage.css
+    ">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>JavaScript: Technical Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#JavaScript_vs_Java">JavaScript vs Java</a></li>
+            <li><a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>            <li><a class="nav-link" href="#Conditional_Statements">Conditional statements</a></li>
+            <li><a class="nav-link" href="#Loops_and_iterations">Loops and iterations</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#More_about_JS">More about JS</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than simply downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <ul>
+                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+                </li>
+                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+                </li>
+            </ul>
+            <p>This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.
+        </p>
+        </section>
+
+        <section id="JavaScript_vs_Java" class="main-section">
+            <header>JavaScript vs Java</header>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+            <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+            <p>Java is a class-based programming language designed for fast execution and type safety. Type safety means, for instance, that you can't cast a Java integer into an object reference or access private memory by corrupting Java bytecodes. Java's class-based model means that programs consist exclusively of classes and their methods. Java's class inheritance and strong typing generally require tightly coupled object hierarchies. These requirements make Java programming more complex than JavaScript programming.</p>
+            <p>In contrast, JavaScript descends in spirit from a line of smaller, dynamically typed languages such as HyperTalk and dBASE. These scripting languages offer programming tools to a much wider audience because of their easier syntax, specialized built-in functionality, and minimal requirements for object creation.</p>
+        </section>
+
+        <section id="JavaScript_Basics" class="main-section">
+            <header>JavaScript Basics</header>
+            <p class="subtitle">JavaScript is case-sensitive</p>
+            <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python. JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+            <code class="code-snippet" >let Früh = "foobar"</code>
+            <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
+            <p class="subtitle">Comments</p>
+            <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+            <code class="code-snippet" >
+                // a one line comment <br>
+                //* this is a longer, <br>
+                    * multi-line comment <br>
+                   */ <br>
+ 
+                /* You can't, however, /* nest comments */ SyntaxError */
+            </code>
+            <p>Comments behave like whitespace, and are discarded during script execution.</p>
+
+            <p class="subtitle">Declarations</p>
+            <p>JavaScript has three kinds of variable declarations.</p>
+            <ul>
+                <li>var: Declares a variable, optionally initializing it to a value.</li>
+                <li>let: Declares a block-scoped, local variable, optionally initializing it to a value.</li>
+                <li>const: Declares a block-scoped, read-only named constant.</li>
+            </ul>
+            
+            <p class="sub-subtitle">Variables</p>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).</p>
+            
+            <p class="sub-subtitle">Declaring variables</p>
+            <p>You can declare a variable in two ways:</p>
+            <ul>
+                <li>With the keyword <code>var</code>. For example, <code>var x = 42</code>. This syntax can be used to declare both local and global variables, depending on the execution context.</li>
+                <li>With the keyword <code>const</code> or <code>let</code>  . For example, <code>let y = 13</code> . This syntax can be used to declare a block-scope local variable.</li>
+            </ul>
+            <p>You can also simply assign a value to a variable. For example, <code>x = 42</code> . This form creates an undeclared global variable. It also generates a strict JavaScript warning. Undeclared global variables can often lead to unexpected behavior. Thus, it is discouraged to use undeclared global variables.</p>
+
+            <p class="sub-subtitle">Constants</p>
+            <p>You can create a read-only, named constant with the <code>const</code> keyword.</p>
+            <p>The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign ($), and can contain alphabetic, numeric, or underscore characters.</p><br>
+            <code  class="code-snippet">const PI = 3.14;</code><br>
+            <p>A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.</p>
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>The latest ECMAScript standard defines eight data types:</p>
+            <ol>
+                <li>Boolean: <code>true</code> and <code>false</code>.
+                <p>In computer science, a Boolean is a logical data type that can have only the values <code>true</code> or <code>false</code>. For example, in JavaScript, Boolean conditionals are often used to decide which sections of code to execute (such as in if statements) or repeat (such as in for loops).</p></li>
+                <li>null. A special keyword denoting a null value. 
+                    <p>In computer science, a <code>null</code> value represents a reference that points, generally intentionally, to a nonexistent or invalid object or address. The meaning of a null reference varies among language implementations.</p>
+                </li>
+                <li>undefined. A top-level property whose value is not defined. <code>undefined</code> is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments.</li>
+                <li>Number. An integer or floating point number. For example: <code>42</code> or <code>3.14159</code>.</li>
+                <li>BigInt. An integer with arbitrary precision. For example: <code>9007199254740992n</code>.</li>
+                <li>String. A sequence of characters that represent a text value. For example: "Howdy"</li>
+                <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
+                    <p>A value having the data type Symbol can be referred to as a "Symbol value". In a JavaScript runtime environment, a symbol value is created by invoking the function <code>symbol</code>, which dynamically produces an anonymous, unique value. A symbol may be used as an object property. Symbol can have an optional description, but for debugging purposes only.</p>
+                </li>
+                <li>Object. Object refers to a data structure containing data and instructions for working with the data. Objects sometimes refer to real-world things, for example a car or map object in a racing game. JavaScript, Java, C++, Python, and Ruby are examples of object-oriented programming languages.</li>
+            </ol>
+        </section>
+
+        <section id="Conditional_Statements" class="main-section">
+            <header>Conditional Statements</header>
+            <p>A conditional statement is a set of commands that executes if a specified condition is true. JavaScript supports two conditional statements: <code>if...else</code> and <code>switch</code>.</p>
+            <ul>
+                <li> <code>if...else</code> statement
+                    <p>Use the <code>if</code> statement to execute a statement if a logical condition is true. Use the optional <code>else</code> clause to execute a statement if the condition is false (Ex 1). You can also compound the statements using <code>else if</code> to have multiple conditions tested in sequence (Ex 2).</p>
+                    <p>Ex 1: <br>
+                        <code class="code-snippet">
+                            if (condition) { <br>
+                            statement_1; <br>
+                            } else { <br>
+                            statement_2; <br>
+                            }</code>
+                    </p>
+                    <p>Ex 2: <br>
+                        <code class="code-snippet">
+                            if (condition) { <br>
+                            statement_1; <br>
+                            } else if (condition_2) { <br>
+                            statement_2; <br>
+                            } else if (condition_n) { <br>
+                             statement_n; <br>
+                             } else { <br>
+                             statement_last; <br>
+                            }</code>
+                    </p>
+                </li>
+                <li><code>switch</code> statement
+                <p>A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement. A <code>switch</code> statement looks like this:</p>
+                <code class="code-snippet">
+                    switch (expression) { <br>
+                    case label_1: <br>
+                        statements_1 <br>
+                        [break;] <br>
+                    case label_2: <br>
+                        statements_2 <br>
+                        [break;] <br>
+                        … <br>
+                    default: <br>
+                        statements_def <br>
+                        [break;] <br>
+                    }
+                </code>
+                <p>JavaScript evaluates the above switch statement as follows: The program first looks for a case clause with a label matching the value of expression and then transfers control to that clause, executing the associated statements. If no matching label is found, the program looks for the optional default clause:
+                    <ul>
+                        <li>If a default clause is found, the program transfers control to that clause, executing the associated statements.</li>
+                        <li>If no default clause is found, the program resumes execution at the statement following the end of switch.</li>
+                        
+                    </ul> <br>
+                    * Obs1: By convention, the default clause is written as the last clause, but it does not need to be so. <br><br>
+                    * Obs2: The optional <code>break</code> statement associated with each case clause ensures that the program breaks out of <code>switch</code> once the matched statement is executed, and then continues execution at the statement following <code>switch</code>. If <code>break</code> is omitted, the program continues execution inside the <code>switch</code> statement (and will evaluate the next case, and so on).
+                </p>
+                </li>
+            </ul>
+        </section>
+
+        <section  id="Loops_and_iterations" class="main-section">
+            <header>Loops and iterations</header>
+            <p>Loops offer a quick and easy way to do something repeatedly. You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another. For example, the idea "Go five steps to the east" could be expressed this way as a loop:</p>
+            <code class="code-snippet">
+            for (let step = 0; step < 5; step++) { <br>
+                // Runs 5 times, with values of step 0 through 4. <br>
+                console.log('Walking east one step'); <br>
+            }
+            </code>  
+            <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)</p>
+            <p>The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
+            <p>The statements for loops provided in JavaScript are listed below (with links, if you want to know more about them). </p>
+            <ul>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement">for statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement">do...while statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement">while statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#labeled_statement">labeled statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement">break statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement">continue statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...in_statement">for...in statement</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement">for...of statement</a></li>
+            </ul>
+        </section>
+
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure — a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
+
+            <ul><p class="subtitle" >Defining functions</p>
+                <li>Function declarations
+                    <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by: 
+                        <ol>
+                            <li>The name of the function.</li>
+                            <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                            <li>The JavaScript statements that define the function, enclosed in curly brackets, {...}.</li> <br>
+                        </ol>
+                    For example, the following code defines a simple function named square: <br><br>
+                    <code class="code-snippet">
+                        function square(number) { <br>
+                            return number * number; <br>
+                        }
+                    </code><br>
+                    The function <code>square</code> takes one parameter, called <code>number</code>. The function consists of one statement that says to return the parameter of the function (that is, <code>number</code>) multiplied by itself. The statement <code>return</code> specifies the value returned by the function (<code>loknumber * number;</code>).
+                    </p>
+                </li>
+                <li>Function expressions
+                    <p>While the function declaration above is syntactically a statement, functions can also be created by a function expression. Such a function can be anonymous; it does not have to have a name. For example, the function square could have been defined as:</p>
+                    <code class="code-snippet">
+                        const square = function(number) { return number * number } <br>
+                        var x = square(4) // x gets the value 16
+                    </code>
+                    <p>However, a name can be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:</p>
+                    <code class="code-snippet">
+                        const factorial = function fac(n) { return n < 2 ? 1 : n * fac(n - 1) } <br>
+                        console.log(factorial(3))
+                    </code>
+                </li>
+            </ul>
+
+            <ul>
+                <li>Calling functions</li>
+                <p>Defining a function does not execute it. Defining it simply names the function and specifies what to do when the function is called. Calling the function actually performs the specified actions with the indicated parameters. For example, if you define the function square, you could call it as follows:</p>
+                <code class="code-snippet">
+                    square(5);
+                </code>
+                <p>The preceding statement calls the function with an argument of 5. The function executes its statements and returns the value 25.</p>
+
+                <li>Function scope
+                    <p>Variables defined inside a function cannot be accessed from anywhere outside the function, because the variable is defined only in the scope of the function. However, a function can access all variables and functions defined inside the scope in which it is defined.</p>
+                    <p>In other words, a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.</p>
+                </li>
+                <li>Closures
+                    <p>Closures are one of the most powerful features of JavaScript. JavaScript allows for the nesting of functions and grants the inner function full access to all the variables and functions defined inside the outer function (and all other variables and functions that the outer function has access to).</p>
+                    <p>However, the outer function does not have access to the variables and functions defined inside the inner function. This provides a sort of encapsulation for the variables of the inner function.</p>
+                    <p>Also, since the inner function has access to the scope of the outer function, the variables and functions defined in the outer function will live longer than the duration of the outer function execution, if the inner function manages to survive beyond the life of the outer function. A closure is created when the inner function is somehow made available to any scope outside the outer function.</p>
+                    <code class="code-snippet">
+                    var pet = function(name) {   // The outer function defines a variable called "name" <br>
+                        var getName = function() { <br>
+                            return name;             // The inner function has access to the "name" variable of the outer function <br>
+                                                } <br>
+                    return getName;            // Return the inner function, thereby exposing it to outer scopes <br>
+                    } <br>
+                    myPet = pet('Vivie'); <br>
+                    myPet();                     // Returns "Vivie"
+                    </code>
+                </li>
+            </ul>
+            <p>For more detailed info about JavaScript functions, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">click here!</a><p>
+        </section>
+
+        <section id="More_about_JS" class="main-section">
+            <header>More about JS</header>
+            <p>The content covered in this page is just some topics and there is far beyond to learn about JavaScript. We encourage you to make your own research in order to learn more about this incredible coding language. Below there are some suggestions if you do not know where to begin.</p>
+            <ul>  
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates">Numbers and dates</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Text_formatting">Text formatting</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections">Indexed collections</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections">Keyed collections</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">Working with objects</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model">Details of the object model</a></li>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">JavaScript modules</a></li>
+            </ul>
+        </section>
+        <section  id="References" class="main-section">
+            <header>References</header>  
+            <p>All the documentation presented in this page comes from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>.</p>
+        </section>
+    </main>
+    
+</body>
+</html>
